@@ -1,0 +1,186 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
+  font-size: 14px;
+}
+
+.hat-sector {
+  display: flex;
+}
+
+.hat-display {
+  display: flex;
+}
+
+.sector-ul {
+  display: flex;
+}
+
+.adrec-ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+.web {
+  text-decoration: none;
+  color: #212121;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.web-span {
+  color: #2196f3;
+}
+
+.list {
+  text-decoration: none;
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.list:hover {
+  color: #2196f3;
+}
+
+.list:focus {
+  color: #2196f3;
+}
+
+.adres-el {
+  text-decoration: none;
+  color: #757575;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.adres-el:hover {
+  color: #2196f3;
+}
+
+.adres-el:focus {
+  color: #2196f3;
+}
+
+.main-title {
+  background-color: #2f303a;
+  text-align: center;
+}
+
+.title {
+  letter-spacing: 0.06em;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 auto;
+  max-width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+}
+
+.button-title {
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  padding: 10px 32px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  background: #2196f3;
+}
+
+.function {
+  text-decoration: none;
+  color: #212121;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.function-paragraph {
+  text-decoration: none;
+  color: #757575;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.headlines {
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.function-name {
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.footer {
+  background: #2f303a;
+}
+
+.web-footer {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.adres {
+  text-decoration: none;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.button {
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  color: #212121;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+button:hover {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+button:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.function-portfolio {
+  text-decoration: none;
+  color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.function-paragraph-portfolio {
+  text-decoration: none;
+  color: #757575;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+address {
+  font-style: normal;
+}
