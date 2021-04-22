@@ -2,8 +2,9 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
   font-size: 14px;
+  margin: 0;
 }
-
+/* header початок*/
 .hat-sector {
   display: flex;
 }
@@ -12,12 +13,31 @@ body {
   display: flex;
 }
 
+/*початок навігації*/
+.sector-nav {
+  display: flex;
+  align-items: center;
+}
+
 .sector-ul {
   display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.sector-li {
+  margin: 32px auto 32px 0px;
+  margin-right: 50px;
 }
 
 .adrec-ul {
   display: flex;
+  margin-right: 215px;
+}
+
+.adrec-li {
+  margin: 32px auto 32px 0px;
+  padding-right: 50px;
 }
 
 li {
@@ -25,6 +45,7 @@ li {
 }
 
 .web {
+  margin: 25px 90px 25px 215px;
   text-decoration: none;
   color: #212121;
   font-family: Raleway;
@@ -38,6 +59,8 @@ li {
 }
 
 .list {
+  margin-top: 17px;
+  margin-right: 50px;
   text-decoration: none;
   color: #212121;
   font-weight: 500;
@@ -98,6 +121,7 @@ li {
 }
 
 .function {
+  text-transform: uppercase;
   text-decoration: none;
   color: #212121;
   font-weight: 700;
