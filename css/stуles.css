@@ -4,6 +4,13 @@ body {
   font-size: 14px;
   margin: 0;
 }
+
+.conteiner {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* header початок*/
 .hat-sector {
   display: flex;
@@ -32,7 +39,6 @@ body {
 
 .adrec-ul {
   display: flex;
-  margin-right: 215px;
 }
 
 .adrec-li {
@@ -40,12 +46,17 @@ body {
   padding-right: 50px;
 }
 
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
 li {
   list-style: none;
 }
 
 .web {
-  margin: 25px 90px 25px 215px;
+  margin: 25px 90px 25px 0px;
   text-decoration: none;
   color: #212121;
   font-family: Raleway;
