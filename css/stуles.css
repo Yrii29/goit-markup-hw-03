@@ -1,49 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
   font-size: 14px;
   margin: 0;
-}
-
-.conteiner {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* header початок*/
-.hat-sector {
-  display: flex;
-}
-
-.hat-display {
-  display: flex;
-}
-
-/*початок навігації*/
-.sector-nav {
-  display: flex;
-  align-items: center;
-}
-
-.sector-ul {
-  display: flex;
-  margin: 0px;
-  padding: 0px;
-}
-
-.sector-li {
-  margin: 32px auto 32px 0px;
-  margin-right: 50px;
-}
-
-.adrec-ul {
-  display: flex;
-}
-
-.adrec-li {
-  margin: 32px auto 32px 0px;
-  padding-right: 50px;
 }
 
 ul {
@@ -55,8 +24,37 @@ li {
   list-style: none;
 }
 
+/*.conteiner {
+  
+  margin-left: auto;
+  margin-right: auto;
+}*/
+
+/* header початок*/
+.hat-sector {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hat-display {
+  display: flex;
+  width: 1200px;
+  margin-bottom: 90px;
+}
+
+/*початок навігації*/
+.sector-nav {
+  display: flex;
+  align-items: center;
+}
+
 .web {
-  margin: 25px 90px 25px 0px;
+  margin-right: 90px;
   text-decoration: none;
   color: #212121;
   font-family: Raleway;
@@ -69,21 +67,47 @@ li {
   color: #2196f3;
 }
 
+.sector-ul {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.sector-li {
+  margin: 32px 50px 32px 0px;
+}
+
 .list {
-  margin-top: 17px;
-  margin-right: 50px;
   text-decoration: none;
   color: #212121;
   font-weight: 500;
   font-size: 14px;
 }
 
-.list:hover {
+.list:hover,
+.list:focus {
   color: #2196f3;
 }
 
-.list:focus {
-  color: #2196f3;
+.adrec-ul {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.adrec-li {
+  margin-left: 50px;
+}
+
+.adres-li:last-child,
+.sector-li:last-child,
+.specific-li:last-child,
+.work-li:last-child,
+.comando-li:last-child,
+.button-li:last-child,
+.function-portfolio-li:last-child(3n) {
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .adres-el {
@@ -94,15 +118,15 @@ li {
   font-size: 14px;
 }
 
-.adres-el:hover {
-  color: #2196f3;
-}
-
+.adres-el:hover,
 .adres-el:focus {
   color: #2196f3;
 }
 
+/*Початок title*/
+
 .main-title {
+  margin-bottom: 90px;
   background-color: #2f303a;
   text-align: center;
 }
@@ -116,6 +140,7 @@ li {
   max-width: 696px;
   font-weight: 900;
   font-size: 44px;
+  margin-bottom: 30px;
 }
 
 .button-title {
@@ -129,6 +154,25 @@ li {
   font-weight: 500;
   font-size: 16px;
   background: #2196f3;
+}
+
+/* початок функцій*/
+
+.sector-specific {
+  display: flex;
+}
+
+.specific-ul {
+  display: flex;
+  margin: 0 auto 90px;
+  padding: 0 15px;
+  align-items: center;
+  width: 1200px;
+}
+
+.specific-li {
+  width: 270px;
+  margin-right: 30px;
 }
 
 .function {
@@ -146,23 +190,78 @@ li {
   font-size: 14px;
 }
 
+/*секція роботи*/
+
+.work {
+  margin: 0 auto;
+  padding: 0 15px;
+  align-items: center;
+  width: 1200px;
+}
+
 .headlines {
+  text-align: center;
+  margin-bottom: 50px;
   color: #212121;
   font-weight: 700;
   font-size: 36px;
 }
 
+.work-ul {
+  display: flex;
+}
+
+.work-li {
+  width: 370px;
+  margin-right: 30px;
+}
+
+/* секція команди*/
+
+.section-comando {
+  margin: 0 auto;
+  padding: 0 15px;
+  align-items: center;
+  width: 1200px;
+}
+
+.comando {
+  margin: 180px auto 50px auto;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.comando-ul {
+  display: flex;
+  margin-bottom: 90px;
+}
+
+.comando-li {
+  width: 270px;
+  height: 370px;
+  margin-right: 30px;
+  text-align: center;
+}
+
 .function-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
   color: #212121;
   font-weight: 500;
   font-size: 16px;
 }
+
+/* сектор підвал*/
 
 .footer {
   background: #2f303a;
 }
 
 .web-footer {
+  margin: 60px 1240px 20px 215px;
   text-decoration: none;
   color: #ffffff;
   font-family: Raleway;
@@ -171,7 +270,16 @@ li {
   font-size: 26px;
 }
 
+.footer-ul {
+  margin-left: 215px;
+}
+
+.footer-li {
+  margin-bottom: 10px;
+}
+
 .adres {
+  margin: 10px auto 10px 0;
   text-decoration: none;
   color: #ffffff;
   font-style: normal;
@@ -179,7 +287,20 @@ li {
   font-size: 14px;
 }
 
+/*початок стилів портфоліо*/
+
+.button-ul {
+  display: flex;
+  margin-left: 495px;
+  margin-bottom: 55px;
+}
+
+.button-li {
+  margin-right: 8px;
+}
+
 .button {
+  border-radius: 4px;
   line-height: 26px;
   letter-spacing: 0.03em;
   background-color: #f5f4fa;
@@ -188,16 +309,30 @@ li {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
+  align-items: center;
 }
 
-button:hover {
-  color: #ffffff;
-  background-color: #2196f3;
-}
-
+button:hover,
 button:focus {
   color: #ffffff;
   background-color: #2196f3;
+}
+
+/*початок основи портфоліо*/
+
+.function-portfolio-ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto 95px auto;
+}
+
+.function-portfolio-li {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .function-portfolio {
@@ -218,4 +353,12 @@ button:focus {
 
 address {
   font-style: normal;
+}
+
+.adres-footer {
+  margin-left: 215px;
+}
+
+.portfolio-footer-li {
+  margin-bottom: 10px;
 }
