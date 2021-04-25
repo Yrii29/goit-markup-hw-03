@@ -32,9 +32,6 @@ li {
 
 /* header початок*/
 .hat-sector {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -44,7 +41,7 @@ li {
 .hat-display {
   display: flex;
   width: 1200px;
-  margin-bottom: 90px;
+  padding: 25px 15px;
 }
 
 /*початок навігації*/
@@ -54,6 +51,7 @@ li {
 }
 
 .web {
+  margin-left: 215px;
   margin-right: 90px;
   text-decoration: none;
   color: #212121;
@@ -73,8 +71,8 @@ li {
   padding: 0px;
 }
 
-.sector-li {
-  margin: 32px 50px 32px 0px;
+.sector-li:not(:last-child) {
+  margin-right: 50px;
 }
 
 .list {
@@ -95,11 +93,11 @@ li {
   margin-left: auto;
 }
 
-.adrec-li {
-  margin-left: 50px;
+.adrec-li:not(:last-child) {
+  margin-right: 50px;
 }
 
-.adres-li:last-child,
+/*.adres-li:last-child,
 .sector-li:last-child,
 .specific-li:last-child,
 .work-li:last-child,
@@ -108,7 +106,7 @@ li {
 .function-portfolio-li:last-child(3n) {
   margin-right: 0px;
   margin-left: 0px;
-}
+}*/
 
 .adres-el {
   text-decoration: none;
@@ -126,9 +124,9 @@ li {
 /*Початок title*/
 
 .main-title {
-  margin-bottom: 90px;
   background-color: #2f303a;
   text-align: center;
+  padding: 200px 0;
 }
 
 .title {
@@ -160,14 +158,14 @@ li {
 
 .sector-specific {
   display: flex;
+  padding-top: 94px;
 }
 
 .specific-ul {
   display: flex;
-  margin: 0 auto 90px;
-  padding: 0 15px;
   align-items: center;
   width: 1200px;
+  margin-left: 215px;
 }
 
 .specific-li {
@@ -193,8 +191,9 @@ li {
 /*секція роботи*/
 
 .work {
-  margin: 0 auto;
-  padding: 0 15px;
+  margin-left: 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   align-items: center;
   width: 1200px;
 }
