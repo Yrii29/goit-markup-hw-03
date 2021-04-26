@@ -39,12 +39,11 @@ li {
 }
 
 .hat-display {
+  margin: 0px auto;
   display: flex;
   align-items: center;
-  text-align: center;
   width: 1200px;
   padding: 15px 15px;
-  margin: 0px auto;
 }
 
 /*початок навігації*/
@@ -187,6 +186,7 @@ li {
   color: #757575;
   font-weight: 400;
   font-size: 14px;
+  line-height: 24px;
 }
 
 /*секція роботи*/
@@ -225,17 +225,18 @@ li {
 }
 
 .comando {
-  margin: 180px auto 50px auto;
   text-align: center;
   margin-bottom: 50px;
   color: #212121;
   font-weight: 700;
   font-size: 36px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .comando-ul {
   display: flex;
-  margin-bottom: 90px;
+  padding-bottom: 94px;
 }
 
 .comando-li {
@@ -257,6 +258,12 @@ li {
 
 .footer {
   background: #2f303a;
+  padding: 60px 0;
+}
+
+.footer-conteiner {
+  align-items: center;
+  width: 1200px;
 }
 
 .web-footer {
