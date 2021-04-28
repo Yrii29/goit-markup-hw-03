@@ -26,6 +26,7 @@ li {
 
 /* header початок*/
 .hat-sector {
+  border-bottom: 1px solid #ececec;
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -126,7 +127,6 @@ li {
 }
 
 .button-title {
-  text-transform: uppercase;
   color: #ffffff;
   line-height: 1.9;
   letter-spacing: 0.06em;
@@ -142,6 +142,7 @@ li {
 
 .sector-specific {
   display: flex;
+  background-color: #e5e5e5;
   padding-top: 94px;
 }
 
@@ -180,6 +181,7 @@ li {
 /*секція роботи*/
 
 .work {
+  background-color: #e5e5e5;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -193,6 +195,7 @@ li {
 
 .headlines {
   text-align: center;
+  margin-top: 0px;
   margin-bottom: 50px;
   color: #212121;
   font-weight: 700;
@@ -211,17 +214,17 @@ li {
 
 /* секція команди*/
 
+.section-comando {
+  background-color: #f5f4fa;
+  margin: 0 auto;
+  padding: 94px 15px;
+  align-items: center;
+}
+
 .comando-conteiner {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-.section-comando {
-  margin: 0 auto;
-  padding: 94px 15px;
-  align-items: center;
-  width: 1200px;
 }
 
 .comando {
@@ -239,6 +242,11 @@ li {
 
 .comando-li:not(:last-child) {
   margin-right: 30px;
+}
+
+.surname {
+  background-color: #ffffff;
+  padding: 30px 0;
 }
 
 .function-name {
@@ -294,7 +302,6 @@ li {
   align-items: center;
   width: 1200px;
   padding: 25px 15px;
-  border-bottom: 1px solid #ececec;
 }
 
 /*секція кнопок*/
@@ -303,13 +310,13 @@ li {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  padding-top: 94px;
+  margin-bottom: 54px;
 }
 
 .button-ul {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 54px;
 }
 
 .button-li:not(:last-child) {
@@ -340,22 +347,24 @@ button:focus {
 
 .function-portfolio-section {
   width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  margin: 0 auto 0 auto;
+  padding: 0 15px 94px 15px;
 }
 
 .function-portfolio-ul {
   display: flex;
   flex-wrap: wrap;
-  width: 1230px;
-  padding: 0 15px;
+  width: 1200px;
+  margin-left: -30px;
+  margin-bottom: -30px;
   margin: 0 auto 95px auto;
 }
 
 .function-portfolio-li {
   flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
+  margin-left: 27px;
   margin-bottom: 30px;
+  border: 1px solid #eeeeee;
 }
 
 .cart {
@@ -368,6 +377,7 @@ button:focus {
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
+  margin: 0;
 }
 
 .function-paragraph-portfolio {
@@ -376,6 +386,7 @@ button:focus {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
+  margin: 0;
 }
 
 address {
