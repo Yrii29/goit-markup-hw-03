@@ -2,6 +2,18 @@ html {
   box-sizing: border-box;
 }
 
+:root {
+  --main-br-color: #212121;
+  --border-bottom-color: #ececec;
+  --web-color: #2196f3;
+  --adrec-el-color: #757575;
+  --title-color: #ffffff;
+  --title-bg-color: #2f303a;
+  --work-bg-color: #e5e5e5;
+  --sector-bg-color: #f5f4fa;
+  --fanc-br-color: #eeeeee;
+}
+
 *,
 *::before,
 *::after {
@@ -12,6 +24,14 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
   font-size: 14px;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 0;
 }
 
@@ -26,7 +46,7 @@ li {
 
 /* header початок*/
 .hat-sector {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-bottom-color);
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -50,7 +70,7 @@ li {
 .web {
   margin-right: 90px;
   text-decoration: none;
-  color: #212121;
+  color: var(--main-br-color);
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -58,7 +78,7 @@ li {
 }
 
 .web-span {
-  color: #2196f3;
+  color: var(--web-color);
 }
 
 .sector-ul {
@@ -80,7 +100,7 @@ li {
 
 .list:hover,
 .list:focus {
-  color: #2196f3;
+  color: var(--web-color);
 }
 
 .adrec-ul {
@@ -95,21 +115,23 @@ li {
 
 .adres-el {
   text-decoration: none;
-  color: #757575;
+  color: var(--adrec-el-color);
   font-family: Roboto;
   font-weight: 500;
   font-size: 14px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .adres-el:hover,
 .adres-el:focus {
-  color: #2196f3;
+  color: var(--web-color);
 }
 
 /*Початок title*/
 
 .main-title {
-  background-color: #2f303a;
+  background-color: var(--title-bg-color);
   text-align: center;
   padding: 200px 0;
 }
@@ -118,7 +140,7 @@ li {
   letter-spacing: 0.06em;
   line-height: 1.36;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--title-color);
   margin: 0 auto;
   max-width: 696px;
   font-weight: 900;
@@ -127,7 +149,7 @@ li {
 }
 
 .button-title {
-  color: #ffffff;
+  color: var(--title-color);
   line-height: 1.9;
   letter-spacing: 0.06em;
   border-radius: 4px;
@@ -135,14 +157,14 @@ li {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  background: #2196f3;
+  background: var(--web-color);
 }
 
 /* початок функцій*/
 
 .sector-specific {
   display: flex;
-  background-color: #e5e5e5;
+  background-color: var(--border-bottom-color);
   padding-top: 94px;
 }
 
@@ -162,26 +184,28 @@ li {
 }
 
 .function {
+  margin-bottom: 10px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #212121;
+  color: var(--main-br-color);
   font-weight: 700;
   font-size: 14px;
+  line-height: 1.14;
 }
 
 .function-paragraph {
   width: 270px;
   text-decoration: none;
-  color: #757575;
+  color: var(--adrec-el-color);
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
 }
 
 /*секція роботи*/
 
 .work {
-  background-color: #e5e5e5;
+  background-color: var(--work-bg-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -197,7 +221,7 @@ li {
   text-align: center;
   margin-top: 0px;
   margin-bottom: 50px;
-  color: #212121;
+  color: var(--main-br-color);
   font-weight: 700;
   font-size: 36px;
 }
@@ -215,9 +239,9 @@ li {
 /* секція команди*/
 
 .section-comando {
-  background-color: #f5f4fa;
+  background-color: var(--sector-bg-color);
   margin: 0 auto;
-  padding: 94px 15px;
+  padding: 94px 0px;
   align-items: center;
 }
 
@@ -230,7 +254,7 @@ li {
 .comando {
   text-align: center;
   margin-bottom: 50px;
-  color: #212121;
+  color: var(--main-br-color);
   font-weight: 700;
   font-size: 36px;
 }
@@ -245,14 +269,13 @@ li {
 }
 
 .surname {
-  background-color: #ffffff;
+  background-color: var(--title-color);
   padding: 30px 0;
 }
 
 .function-name {
-  margin-top: 30px;
   margin-bottom: 10px;
-  color: #212121;
+  color: var(--main-br-color);
   font-weight: 500;
   font-size: 16px;
 }
@@ -260,7 +283,7 @@ li {
 /* сектор підвал*/
 
 .footer {
-  background: #2f303a;
+  background: var(--title-bg-color);
   padding: 60px 0;
 }
 
@@ -274,7 +297,7 @@ li {
   display: block;
   margin-bottom: 30px;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--title-color);
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -288,10 +311,12 @@ li {
 .adres {
   margin: 10px auto 10px 0;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--title-color);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 /*початок стилів портфоліо*/
@@ -306,11 +331,14 @@ li {
 
 /*секція кнопок*/
 
+.setion-on {
+  padding-top: 94px;
+}
+
 .button-filters {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  padding-top: 94px;
   margin-bottom: 54px;
 }
 
@@ -324,12 +352,13 @@ li {
 }
 
 .button {
+  border: none;
   padding: 6px 22px;
   border-radius: 4px;
   line-height: 26px;
   letter-spacing: 0.03em;
-  background-color: #f5f4fa;
-  color: #212121;
+  background-color: var(--sector-bg-color);
+  color: var(--main-br-color);
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
@@ -339,8 +368,8 @@ li {
 
 button:hover,
 button:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--title-color);
+  background-color: var(--web-color);
 }
 
 /*початок основи портфоліо*/
@@ -357,23 +386,24 @@ button:focus {
   width: 1200px;
   margin-left: -30px;
   margin-bottom: -30px;
-  margin: 0 auto 95px auto;
+  margin: 0 auto 94px auto;
 }
 
 .function-portfolio-li {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 27px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
 }
 
 .cart {
-  padding: 20px;
+  padding: 20px 24px;
+  border: 1px solid var(--fanc-br-color);
+  border-top: none;
 }
 
 .function-portfolio {
   text-decoration: none;
-  color: #212121;
+  color: var(--main-br-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
@@ -382,7 +412,7 @@ button:focus {
 
 .function-paragraph-portfolio {
   text-decoration: none;
-  color: #757575;
+  color: var(--adrec-el-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
