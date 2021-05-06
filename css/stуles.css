@@ -164,7 +164,6 @@ li {
 
 .sector-specific {
   display: flex;
-  background-color: var(--border-bottom-color);
   padding-top: 94px;
 }
 
@@ -205,7 +204,6 @@ li {
 /*секція роботи*/
 
 .work {
-  background-color: var(--work-bg-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -391,7 +389,7 @@ button:focus {
 
 .function-portfolio-li {
   flex-basis: calc(100% / 3 - 30px);
-  margin-left: 27px;
+  margin-left: 30px;
   margin-bottom: 30px;
 }
 
@@ -425,4 +423,8 @@ address {
 
 .portfolio-footer-li {
   margin-bottom: 10px;
+}
+
+.social-icons-list {
+  color: #000;
 }
